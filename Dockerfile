@@ -47,6 +47,8 @@ ENV APTLIST="\
 	subversion \
 	tar \
 	unzip \
+	nano \
+	mysql-server \
 	wget"
 
 # install packages
@@ -102,5 +104,5 @@ RUN chmod +x \
 	/etc/service/*/run
 
 # ports and volumes
-EXPOSE 443
+EXPOSE 8443
 VOLUME /config /data
