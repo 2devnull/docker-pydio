@@ -30,6 +30,7 @@ ENV APTLIST="\
 	nano \
 	git \
 	pydio \
+	pydio-plugin-editor.pdfjs \
 	ssmtp"
 
 # install packages
