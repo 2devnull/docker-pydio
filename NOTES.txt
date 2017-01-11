@@ -1,0 +1,4 @@
+To clear plugin cache:
+=======================
+rm -f /data/pydiodata/cache/plugins_*.ser
+rm -f /data/pydiodata/cache/i18n/en_plugins_messages.ser
