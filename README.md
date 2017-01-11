@@ -34,6 +34,21 @@ docker create \
 linuxserver/pydio
 ```
 
+```
+docker rm -f pydio
+docker run -dt --name pydio -p 8443:443 \
+	-e TZ=America/New_York \
+	-e PGID=33 \
+	-e PUID=33 \
+	-e MYSQL_ROOT_PASSWORD=pydiomysqlpwd \
+	-e MYSQL_DIR=/data \
+	-e DATADIR=/data/databases \
+	-v /local/data:/data \
+	-v /local/config:/config \
+	2devnull/docker-pydio $1
+
+```
+
 ## Parameters
 
 `The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
